@@ -18,10 +18,3 @@ function App() {
   );
 }
 export default App;
-
-/*     
-        bgcolor: 'background.default',
-        color: 'text.primary',
-        {theme.palette.mode} mode
-        onClick={colorMode.toggleColorMode}
-      */
