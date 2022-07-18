@@ -1,7 +1,5 @@
-import styled from "styled-components";
+import { styled } from "@mui/material/styles";
 
-export const Line = styled.div`
-  width: 100%;
-  border-bottom: solid 0.5px #6a6a6a;
-  opacity: 50%;
-`;
+export const BackgroundContainer = styled("div")(({ theme }) => ({
+  background: theme.palette.background.default,
+}));

@@ -1,25 +1,21 @@
-import React from "react";
-import { Line } from "../common-styles";
-import MainHeader from "./main-header";
-import TopHeader from "./top-header";
-import { CustomAppBar } from "./header-styles";
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Container from "@mui/material/Container";
+import MainHeader from "./MainHeader";
+import TopHeader from "./TopHeader";
+import { Divider } from "@mui/material";
 
-const Header = ({ themeToggler }) => {
+const ResponsiveAppBar = () => {
   return (
-    <>
-      <CustomAppBar position="sticky">
-        <div class="main-container">
-          <TopHeader themeToggler={themeToggler} />
-        </div>
-        <Line />
-        <div class="main-container">
-          <MainHeader />
-        </div>
-      </CustomAppBar>
-
-      <Line />
-    </>
+    <AppBar position="sticky">
+      <Container maxWidth="md">
+        <TopHeader />
+      </Container>
+      <Divider />
+      <Container maxWidth="lg">
+        <MainHeader />
+      </Container>
+    </AppBar>
   );
 };
-
-export default Header;
+export default ResponsiveAppBar;

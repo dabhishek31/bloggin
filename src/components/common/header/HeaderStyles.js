@@ -1,26 +1,18 @@
-import styled from "styled-components";
-
 import { Switch, Link, AppBar, InputBase } from "@mui/material";
-import { styled as materialStyled, alpha } from '@mui/material/styles';
+import { styled, alpha } from "@mui/material/styles";
 
-
-export const CustomAppBar = styled(AppBar)`
-    background-color: ${({ theme }) => theme.body} !important;
-`;
-
-export const MaterialUISwitch = materialStyled(Switch)(({ theme }) => {
-  console.log(theme);
+export const MaterialUISwitch = styled(Switch)(({ theme }) => {
   return {
-    width: 62,
-    height: 34,
-    padding: 7,
+    width: 50,
+    height: 24,
+    padding: 9,
     "& .MuiSwitch-switchBase": {
       margin: 1,
       padding: 0,
       transform: "translateX(6px)",
       "&.Mui-checked": {
         color: "#fff",
-        transform: "translateX(22px)",
+        transform: "translateX(20px)",
         "& .MuiSwitch-thumb:before": {
           backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20"><path fill="${encodeURIComponent(
             "#fff"
@@ -35,8 +27,8 @@ export const MaterialUISwitch = materialStyled(Switch)(({ theme }) => {
     },
     "& .MuiSwitch-thumb": {
       backgroundColor: theme.palette.mode === "dark" ? "#003892" : "#001e3c",
-      width: 32,
-      height: 32,
+      width: 20,
+      height: 20,
       "&:before": {
         content: "''",
         position: "absolute",
@@ -59,64 +51,50 @@ export const MaterialUISwitch = materialStyled(Switch)(({ theme }) => {
   };
 });
 
-export const TopHeaderContainer = styled.div`
-  display: flex;
-  flex-direction: row-reverse; ;
-`;
-
-export const CustomLink = materialStyled(Link)(() => ({
-  display: "inline-flex",
-  alignItems: "center",
+export const TopHeaderContainer = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "row-reverse",
+  padding: "12px 0px",
 }));
 
-export const CustomText = styled.div`
-  display: inline-flex;
-  color: ${({ theme }) => theme.text};
-  &:hover {
-    color: ${({ theme }) => theme.hoverText};
-  }
-`;
+export const Search = styled("div")(({ theme }) => ({
+  position: "relative",
+  borderRadius: theme.shape.borderRadius,
+  backgroundColor: alpha(theme.palette.primary.dark, 0.15),
+  "&:hover": {
+    backgroundColor: alpha(theme.palette.primary.dark, 0.25),
+  },
+  marginLeft: 0,
+  width: "100%",
+  [theme.breakpoints.up("sm")]: {
+    marginLeft: theme.spacing(1),
+    width: "auto",
+  },
+}));
 
+export const SearchIconWrapper = styled("div")(({ theme }) => ({
+  padding: theme.spacing(0, 2),
+  height: "100%",
+  position: "absolute",
+  pointerEvents: "none",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+}));
 
-
-export const Search = materialStyled('div')(({ theme }) => ({
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.white, 0.15),
-    '&:hover': {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
-    },
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(1),
-      width: 'auto',
-    },
-  }));
-  
-  export  const SearchIconWrapper = materialStyled('div')(({ theme }) => ({
-    padding: theme.spacing(0, 2),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }));
-  
-  export  const StyledInputBase = materialStyled(InputBase)(({ theme }) => ({
-    color: 'inherit',
-    '& .MuiInputBase-input': {
-      padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-      transition: theme.transitions.create('width'),
-      width: '100%',
-      [theme.breakpoints.up('sm')]: {
-        width: '12ch',
-        '&:focus': {
-          width: '20ch',
-        },
+export const StyledInputBase = styled(InputBase)(({ theme }) => ({
+  color: "inherit",
+  "& .MuiInputBase-input": {
+    padding: theme.spacing(1, 1, 1, 0),
+    // vertical padding + font size from searchIcon
+    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    transition: theme.transitions.create("width"),
+    width: "100%",
+    [theme.breakpoints.up("sm")]: {
+      width: "12ch",
+      "&:focus": {
+        width: "20ch",
       },
     },
-  }));
+  },
+}));
