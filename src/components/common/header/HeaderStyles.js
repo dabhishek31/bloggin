@@ -1,7 +1,7 @@
-import { Switch, Link, AppBar, InputBase } from "@mui/material";
+import { InputBase } from "@mui/material";
 import { styled, alpha } from "@mui/material/styles";
 
-export const TopHeaderContainer = styled("div")(({ theme }) => ({
+export const TopHeaderContainer = styled("div")(({}) => ({
   display: "flex",
   flexDirection: "row-reverse",
   padding: "12px 0px",

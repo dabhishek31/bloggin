@@ -11,9 +11,10 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  // background:{
-  //   paper: "#363537"
-  // },
+  primary: {
+    main: "#272727",
+    dark: "#2C3639",
+  },
   text: {
     disabled: "#FAFAFA",
     primary: "#FAFAFA",
