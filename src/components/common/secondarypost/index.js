@@ -16,7 +16,7 @@ const SecondaryPost = () => {
           p: 1,
         }}
       >
-        <CustomTypography>
+        <CustomTypography variant="body2">
           Cillum occaecat magna ullamco proident eu nulla eu aliqua commodo.
         </CustomTypography>
         <SizedBox size={0.5} />

@@ -10,7 +10,7 @@ import SecondaryPost from "../common/secondarypost";
 
 const Home = () => {
   return (
-    <Container maxWidth="lg">
+    <Container fixed>
       <CustomBox
         styles={{
           margin: "24px 0px",

@@ -12,11 +12,25 @@ import AdbIcon from "@mui/icons-material/LibraryBooks";
 
 import { Search, SearchIconWrapper, StyledInputBase } from "./HeaderStyles";
 import DarkLightMode from "../mode/DarkLightMode";
+import CustomPopover from "../popover";
 
 const pages = ["Podcasts", "Marketplace", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const MainHeader = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchor, setAnchor] = React.useState(false);
 
@@ -75,9 +89,17 @@ const MainHeader = () => {
         }}
       >
         {pages.map((page) => (
-          <Button key={page} variant="button">
-            {page}
-          </Button>
+          <>
+            <Button key={page} variant="button" onClick={handleClick}>
+              {page}
+            </Button>
+            <CustomPopover
+              id={id}
+              open={open}
+              anchorEl={anchorEl}
+              handleClose={handleClose}
+            />
+          </>
         ))}
       </Box>
       <Search sx={{ display: { sm: "block", xs: "none" } }}>
