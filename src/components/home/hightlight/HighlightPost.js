@@ -19,13 +19,14 @@ const HighlightPost = () => {
           bottom: "0",
           left: "0",
           background: "#0000006e",
+          width: "100%",
         }}
       >
         <Typography
           variant="h4"
           flexWrap={true}
           sx={{
-            p: 1,
+            padding: "8px 20px",
             color: "white",
             fontWeight: 700,
             width: "76%",

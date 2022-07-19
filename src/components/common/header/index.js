@@ -8,7 +8,7 @@ import { Divider } from "@mui/material";
 const ResponsiveAppBar = () => {
   return (
     <AppBar position="sticky">
-      <Container maxWidth="md">
+      <Container maxWidth="lg" sx={{ display: { sm: "block", xs: "none" } }}>
         <TopHeader />
       </Container>
       <Divider />

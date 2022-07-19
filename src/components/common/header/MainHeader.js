@@ -1,5 +1,5 @@
 import React from "react";
-import { Toolbar } from "@mui/material";
+import { Drawer, Toolbar } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
@@ -11,31 +11,30 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/LibraryBooks";
 
 import { Search, SearchIconWrapper, StyledInputBase } from "./HeaderStyles";
+import DarkLightMode from "../mode/DarkLightMode";
 
 const pages = ["Podcasts", "Marketplace", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const MainHeader = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchor, setAnchor] = React.useState(false);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
+    setAnchor((prev) => !prev);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+    setAnchor(false);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
   return (
     <Toolbar disableGutters>
-      <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+      <AdbIcon
+        sx={{ display: { xs: "none", sm: "flex", md: "flex" }, mr: 1 }}
+      />
       <Typography
         variant="h6"
         noWrap
@@ -43,7 +42,7 @@ const MainHeader = () => {
         href="/"
         sx={{
           mr: 2,
-          display: { xs: "none", md: "flex" },
+          display: { xs: "none", md: "flex", sm: "flex" },
           fontFamily: "typography.body1",
           fontWeight: 500,
           letterSpacing: ".05rem",
@@ -53,107 +52,35 @@ const MainHeader = () => {
       >
         Bloggin
       </Typography>
-
-      <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+      <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
         <IconButton
           size="large"
           aria-label="account of current user"
-          aria-controls="menu-appbar"
-          aria-haspopup="true"
           onClick={handleOpenNavMenu}
           color="inherit"
         >
           <MenuIcon />
         </IconButton>
-        <Menu
-          id="menu-appbar"
-          anchorEl={anchorElNav}
-          anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "left",
-          }}
-          keepMounted
-          transformOrigin={{
-            vertical: "top",
-            horizontal: "left",
-          }}
-          open={Boolean(anchorElNav)}
-          onClose={handleCloseNavMenu}
-          sx={{
-            display: { xs: "block", md: "none" },
-          }}
-        >
-          {pages.map((page) => (
-            <MenuItem key={page} onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">{page}</Typography>
-            </MenuItem>
-          ))}
-        </Menu>
+      </Box>
+      <AdbIcon sx={{ display: { xs: "flex", sm: "none", md: "none" } }} />
+      <Box sx={{ m: 1, display: { xs: "flex", sm: "none", md: "none" } }}>
+        <DarkLightMode />
       </Box>
 
-      <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-      <Typography
-        variant="h5"
-        noWrap
-        component="a"
-        href=""
-        sx={{
-          mr: 2,
-          display: { xs: "flex", md: "none" },
-          flexGrow: 1,
-          fontFamily: "typography.body1",
-          fontWeight: 500,
-          letterSpacing: ".05rem",
-          color: "inherit",
-          textDecoration: "none",
-        }}
-      >
-        Bloggin
-      </Typography>
       <Box
         sx={{
           flexGrow: 1,
-          display: { xs: "none", md: "flex" },
+          display: { xs: "none", sm: "flex", md: "flex" },
           flexDirection: "row-reverse",
         }}
       >
         {pages.map((page) => (
-          <Button key={page} onClick={handleCloseNavMenu} variant="button">
+          <Button key={page} variant="button">
             {page}
           </Button>
         ))}
       </Box>
-
-      {/* <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
-      <Search>
+      <Search sx={{ display: { sm: "block", xs: "none" } }}>
         <SearchIconWrapper>
           <SearchIcon />
         </SearchIconWrapper>
@@ -162,6 +89,20 @@ const MainHeader = () => {
           inputProps={{ "aria-label": "search" }}
         />
       </Search>
+      <Drawer anchor={"left"} open={anchor}>
+        <Box sx={{ m: 2 }}>
+          List Items to come here
+          <Button
+            variant="contained"
+            sx={{ m: 2 }}
+            onClick={() => {
+              handleCloseNavMenu();
+            }}
+          >
+            Close
+          </Button>
+        </Box>
+      </Drawer>
     </Toolbar>
   );
 };

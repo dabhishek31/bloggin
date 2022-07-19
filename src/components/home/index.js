@@ -10,13 +10,7 @@ const Home = () => {
     <Container maxWidth="lg">
       <Box sx={{ m: 2, display: "flex", justifyContent: "space-between" }}>
         <HighlightPost />
-        <Box
-          sx={{
-            width: "2%",
-            background: theme.palette.primary.main,
-          }}
-        ></Box>
-        <Box sx={{ border: "solid 1px black", width: "30%" }}></Box>
+        <Box sx={{ border: "solid 1px black", width: "32%" }}></Box>
       </Box>
     </Container>
   );
