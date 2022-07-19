@@ -4,7 +4,7 @@ import CustomImage from "../image";
 import SizedBox from "../sizedbox";
 import CustomTypography from "../typography";
 
-const SecondaryPost = () => {
+const SecondaryPost = ({ image, title }) => {
   return (
     <CustomBox needShadow needRadius>
       <CustomImage

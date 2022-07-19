@@ -13,7 +13,7 @@ const ResponsiveAppBar = () => {
         background:
           theme.palette.mode === "dark"
             ? theme.palette.customBackground
-            : "transparent",
+            : theme.palette.common.white,
       }}
       position="sticky"
     >

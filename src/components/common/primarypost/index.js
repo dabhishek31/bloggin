@@ -4,6 +4,7 @@ import { PrimaryPostContainer } from "./style";
 import CustomBox from "../box";
 import CustomImage from "../image";
 import CustomTypography from "../typography";
+import SizedBox from "../sizedbox";
 
 const PrimaryPost = () => {
   const theme = useTheme();
@@ -35,9 +36,9 @@ const PrimaryPost = () => {
           <CustomTypography
             flexWrap={true}
             styles={{
-              padding: "8px 20px",
               color: "white",
               fontWeight: 700,
+              padding: "8px 20px",
               width: "76%",
               fontSize: {
                 xs: theme.typography.body1.fontSize,
@@ -49,6 +50,16 @@ const PrimaryPost = () => {
           >
             How to build your infrastructure using code ?
           </CustomTypography>
+          <CustomTypography
+            styles={{
+              fontWeight: 500,
+              padding: "0 20px",
+              color: "white",
+            }}
+          >
+            Marketing | 25 min Read
+          </CustomTypography>
+          <SizedBox size={0.5} />
         </CustomBox>
       </CustomBox>
     </PrimaryPostContainer>

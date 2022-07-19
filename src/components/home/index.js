@@ -7,6 +7,11 @@ import CustomBox from "../common/box";
 import CustomImage from "../common/image";
 import PrimaryPost from "../common/primarypost";
 import SecondaryPost from "../common/secondarypost";
+import SizedBox from "../common/sizedbox";
+import TitleBar from "../common/titlebar";
+import MostRecentPosts from "./mostRecentPosts";
+import MostPopularPosts from "./mostPopularPosts";
+import PrimaryPostsContainer from "./primaryPostsContainer";
 
 const Home = () => {
   return (
@@ -18,59 +23,14 @@ const Home = () => {
           justifyContent: "space-between",
         }}
       >
-        <CustomBox
-          styles={{
-            width: { xs: "100%", sm: "66%", md: "66%", lg: "66%" },
-          }}
-        >
-          <PrimaryPost />
-        </CustomBox>
+        <PrimaryPostsContainer />
 
-        <CustomBox
-          styles={{
-            width: { xs: "100%", sm: "32%", md: "32%", lg: "32%" },
-          }}
-        >
-          <CustomBox
-            needBackground
-            needShadow
-            needRadius
-            styles={{
-              p: 1,
-              marginBottom: "16px",
-            }}
-          >
-            <CustomTypography
-              styles={{
-                fontWeight: 500,
-              }}
-            >
-              Most Popular
-            </CustomTypography>
-          </CustomBox>
+        <MostPopularPosts />
+      </CustomBox>
 
-          <SecondaryPost />
-        </CustomBox>
-      </CustomBox>
-      <CustomBox
-        styles={{
-          border: "solid 1px black",
-        }}
-      >
-        <CustomTypography variant="body2">
-          Labore adipisicing qui cupidatat nulla esse minim sit nostrud. Id
-          officia excepteur consequat id mollit laborum laborum reprehenderit
-          voluptate id ipsum consequat ad dolore. Irure ea minim non ea Lorem
-          reprehenderit velit proident anim nisi minim excepteur. Minim non
-          Lorem aute aliqua exercitation laborum dolor occaecat ullamco ad et
-          nisi. Qui pariatur et ullamco adipisicing nulla ea ea ipsum sunt
-          proident veniam officia. Consectetur nulla fugiat adipisicing id
-          adipisicing et dolore elit. Velit tempor esse veniam in ad esse
-          aliquip excepteur commodo. Commodo nostrud irure id do nulla cupidatat
-          reprehenderit enim id adipisicing anim do. Fugiat nisi excepteur et
-          nostrud duis minim dolore id. Ex voluptate commodo sint minim.
-        </CustomTypography>
-      </CustomBox>
+      {/* Most Recent Posts */}
+      <MostRecentPosts />
+      <SizedBox size={8} />
     </Container>
   );
 };
