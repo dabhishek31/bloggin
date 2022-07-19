@@ -1,9 +1,12 @@
 export const lightTheme = {
   primary: {
-    main: "#faedcd",
+    main: "#FFFCE8",
     light: "#fefae0",
-    dark: "#d4a373",
+    dark: "#FFE1BB",
   },
+  customBackground:
+    "linear-gradient(90deg, hsla(52, 100%, 95%, 1) 0%, hsla(34, 100%, 87%, 1) 98%);",
+
   text: {
     disabled: "#e3d5ca",
     primary: "#283618",
@@ -15,6 +18,8 @@ export const darkTheme = {
     main: "#272727",
     dark: "#2C3639",
   },
+  customBackground:
+    "linear-gradient(90deg, hsla(0, 0%, 15%, 1) 0%, hsla(194, 13%, 20%, 1) 98%);",
   text: {
     disabled: "#FAFAFA",
     primary: "#FAFAFA",

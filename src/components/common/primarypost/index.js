@@ -19,7 +19,7 @@ const PrimaryPost = () => {
         }}
       >
         <CustomImage
-          src={`https://andrewbeaton.net/wp-content/uploads/2019/10/HashiCorp-Terraform-logo.png`}
+          src={`https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`}
         />
 
         <CustomBox

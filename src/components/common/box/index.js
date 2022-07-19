@@ -14,7 +14,7 @@ const CustomBox = ({
   return (
     <Box
       sx={{
-        backgroundColor: needBackground ? theme.palette.primary.main : "",
+        background: needBackground ? theme.palette.customBackground : "",
         boxShadow: needShadow ? theme.shadows[4] : 0,
         borderRadius: needRadius ? 1 : 0,
         ...styles,
