@@ -4,13 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ColorModeState from "./context/theme/ThemeState";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ColorModeState>
-      <App />
-    </ColorModeState>
+    <BrowserRouter>
+      <ColorModeState>
+        <App />
+      </ColorModeState>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

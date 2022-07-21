@@ -9,18 +9,28 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/LibraryBooks";
-
+import { useNavigate } from "react-router-dom";
 import { Search, SearchIconWrapper, StyledInputBase } from "./HeaderStyles";
 import DarkLightMode from "../mode/DarkLightMode";
 import CustomPopover from "../popover";
 
-const pages = ["Podcasts", "Marketplace", "Blog"];
+const pages = ["Marketplace", "About", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const MainHeader = () => {
+  let navigate = useNavigate();
+
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
+    if (event.target.innerText == "ABOUT") {
+      navigate("/about");
+      return;
+    }
+    if (event.target.innerText == "BLOG") {
+      navigate("/");
+      return;
+    }
     setAnchorEl(event.currentTarget);
   };
 
