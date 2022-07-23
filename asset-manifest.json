@@ -1,7 +1,7 @@
 {
   "main.css": "/bloogin/static/css/main.1684bf51.chunk.css",
-  "main.js": "/bloogin/static/js/main.0b422a64.chunk.js",
-  "main.js.map": "/bloogin/static/js/main.0b422a64.chunk.js.map",
+  "main.js": "/bloogin/static/js/main.bc08a879.chunk.js",
+  "main.js.map": "/bloogin/static/js/main.bc08a879.chunk.js.map",
   "static/js/1.7b0787d4.chunk.js": "/bloogin/static/js/1.7b0787d4.chunk.js",
   "static/js/1.7b0787d4.chunk.js.map": "/bloogin/static/js/1.7b0787d4.chunk.js.map",
   "static/js/2.ff249300.chunk.js": "/bloogin/static/js/2.ff249300.chunk.js",
@@ -17,6 +17,6 @@
   "static/media/bloggin_logo.png": "/bloogin/static/media/bloggin_logo.7988a319.png",
   "static/css/main.1684bf51.chunk.css.map": "/bloogin/static/css/main.1684bf51.chunk.css.map",
   "index.html": "/bloogin/index.html",
-  "precache-manifest.0236cae1f7c64789d6663bfbb395e371.js": "/bloogin/precache-manifest.0236cae1f7c64789d6663bfbb395e371.js",
+  "precache-manifest.19ccffcadb8aec4d78c238d8498a7de3.js": "/bloogin/precache-manifest.19ccffcadb8aec4d78c238d8498a7de3.js",
   "service-worker.js": "/bloogin/service-worker.js"
 }
