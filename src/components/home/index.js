@@ -4,10 +4,11 @@ import SizedBox from "../common/sizedbox";
 import MostRecentPosts from "./mostRecentPosts";
 import MostPopularPosts from "./mostPopularPosts";
 import PrimaryPostsContainer from "./primaryPostsContainer";
+import { Container } from "@mui/material";
 
 const Home = () => {
   return (
-    <>
+    <Container fixed>
       <CustomBox
         styles={{
           margin: "24px 0px",
@@ -16,14 +17,11 @@ const Home = () => {
         }}
       >
         <PrimaryPostsContainer />
-
         <MostPopularPosts />
       </CustomBox>
-
-      {/* Most Recent Posts */}
       <MostRecentPosts />
       <SizedBox size={8} />
-    </>
+    </Container>
   );
 };
 

@@ -1,12 +1,19 @@
 import React from "react";
+import { CustomImageContainer } from "./styles";
 
-const CustomImage = ({ src = "", alt = "", styles = {} }) => {
+const CustomImage = ({
+  src = "",
+  alt = "",
+  styles = {},
+  customStyles = {},
+}) => {
   return (
-    <img
+    <CustomImageContainer
       src={src}
       alt={alt}
       loading="lazy"
-      style={{ display: "block", ...styles }}
+      customStyles={customStyles}
+      style={{ ...styles }}
     />
   );
 };

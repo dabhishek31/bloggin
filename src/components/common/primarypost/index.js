@@ -6,7 +6,7 @@ import CustomImage from "../image";
 import CustomTypography from "../typography";
 import SizedBox from "../sizedbox";
 
-const PrimaryPost = () => {
+const PrimaryPost = ({ src = "cloud,cloud+infrastructure" }) => {
   const theme = useTheme();
 
   return (

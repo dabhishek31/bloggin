@@ -4,12 +4,26 @@ import CustomImage from "../image";
 import SizedBox from "../sizedbox";
 import CustomTypography from "../typography";
 
-const SecondaryPost = ({ image, title }) => {
+const SecondaryPost = ({
+  image,
+  title,
+  src = "city,night",
+  show = true,
+  customStyles = {},
+}) => {
   return (
-    <CustomBox needShadow needRadius>
+    <CustomBox
+      needShadow
+      needRadius
+      styles={{
+        width: { xs: "100%", sm: "100%" },
+      }}
+    >
       <CustomImage
-        src={`https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`}
+        src={`https://source.unsplash.com/random/250x250`}
+        customStyles={customStyles}
       />
+
       <CustomBox
         needBackground
         styles={{

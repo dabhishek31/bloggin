@@ -24,13 +24,29 @@ const Footer = () => {
               justifyContent: "center",
             }}
           >
-            <FacebookIcon />
-            <SizedBox />
-            <TwitterIcon />
-            <SizedBox />
-            <InstagramIcon />
-            <SizedBox />
-            <YouTubeIcon />
+            <FacebookIcon
+              sx={{
+                color: "text.primary",
+              }}
+            />
+            <SizedBox width="10px" />
+            <TwitterIcon
+              sx={{
+                color: "text.primary",
+              }}
+            />
+            <SizedBox width="10px" />
+            <InstagramIcon
+              sx={{
+                color: "text.primary",
+              }}
+            />
+            <SizedBox width="10px" />
+            <YouTubeIcon
+              sx={{
+                color: "text.primary",
+              }}
+            />
           </CustomBox>
           <SizedBox />
           <CustomBox
@@ -40,11 +56,11 @@ const Footer = () => {
             }}
           >
             <CustomTypography>Home</CustomTypography>
-            <SizedBox />
+            <SizedBox width="20px" />
             <CustomTypography>Blogs</CustomTypography>
-            <SizedBox />
+            <SizedBox width="20px" />
             <CustomTypography>Services</CustomTypography>
-            <SizedBox />
+            <SizedBox width="20px" />
             <CustomTypography>Privay Policy</CustomTypography>
           </CustomBox>
         </Container>

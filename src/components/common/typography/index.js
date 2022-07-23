@@ -7,6 +7,7 @@ const CustomTypography = ({
   styles = { display: "inline-flex", alignItems: "center" },
 }) => {
   const theme = useTheme();
+  console.log(styles);
   return (
     <Typography
       variant={variant}

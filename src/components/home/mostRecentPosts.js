@@ -10,7 +10,7 @@ const MostRecentPosts = () => {
       <CustomBox
         styles={{
           display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
+          gridTemplateColumns: { xs: "1fr 1fr", sm: "1fr 1fr 1fr" },
           gap: "20px",
         }}
       >

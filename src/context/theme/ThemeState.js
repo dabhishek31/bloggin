@@ -1,5 +1,9 @@
 import React, { useMemo, useState } from "react";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import {
+  ThemeProvider,
+  createTheme,
+  responsiveFontSizes,
+} from "@mui/material/styles";
 import ColorModeContext from "./index";
 import { darkTheme, lightTheme } from "../../styles/themes";
 import { BackgroundContainer } from "../../components/common/common-styles";
@@ -16,7 +20,7 @@ const ColorModeState = ({ children }) => {
     []
   );
 
-  const theme = useMemo(
+  let theme = useMemo(
     () =>
       createTheme({
         palette: {
@@ -26,6 +30,8 @@ const ColorModeState = ({ children }) => {
       }),
     [mode]
   );
+
+  theme = useMemo(() => responsiveFontSizes(theme), [theme]);
 
   return (
     <ColorModeContext.Provider value={colorMode}>
