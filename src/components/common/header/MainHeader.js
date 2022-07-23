@@ -13,6 +13,9 @@ import { useNavigate } from "react-router-dom";
 import { Search, SearchIconWrapper, StyledInputBase } from "./HeaderStyles";
 import DarkLightMode from "../mode/DarkLightMode";
 import CustomPopover from "../popover";
+import CustomBox from "../box";
+import CustomImage from "../image";
+import Logo from "../../../assets/bloggin_logo.png";
 
 const pages = ["Marketplace", "About", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -56,27 +59,8 @@ const MainHeader = () => {
 
   return (
     <Toolbar disableGutters>
-      <AdbIcon
-        sx={{ display: { xs: "none", sm: "flex", md: "flex" }, mr: 1 }}
-      />
-      <Typography
-        variant="h6"
-        noWrap
-        component="a"
-        href="/"
-        sx={{
-          mr: 2,
-          display: { xs: "none", md: "flex", sm: "flex" },
-          fontFamily: "typography.body1",
-          fontWeight: 500,
-          letterSpacing: ".05rem",
-          color: "inherit",
-          textDecoration: "none",
-        }}
-      >
-        Bloggin
-      </Typography>
-      <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
+      <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "flex" } }}>
+        <DarkLightMode />
         <IconButton
           size="large"
           aria-label="account of current user"
@@ -86,15 +70,11 @@ const MainHeader = () => {
           <MenuIcon />
         </IconButton>
       </Box>
-      <AdbIcon sx={{ display: { xs: "flex", sm: "none", md: "none" } }} />
-      <Box sx={{ m: 1, display: { xs: "flex", sm: "none", md: "none" } }}>
-        <DarkLightMode />
-      </Box>
 
       <Box
         sx={{
           flexGrow: 1,
-          display: { xs: "none", sm: "flex", md: "flex" },
+          display: { xs: "none", sm: "none", md: "flex" },
           flexDirection: "row-reverse",
         }}
       >

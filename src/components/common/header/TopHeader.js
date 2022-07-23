@@ -6,6 +6,7 @@ import { useTheme } from "@mui/material/styles";
 import LoginIcon from "@mui/icons-material/Login";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import DarkLightMode from "../mode/DarkLightMode";
+import SizedBox from "../sizedbox";
 
 const TopHeader = () => {
   const theme = useTheme();
@@ -46,6 +47,7 @@ const TopHeader = () => {
         <LocalCafeIcon fontSize="small" />
         &nbsp;Buy me a coffee
       </Typography>
+      <SizedBox size={0.5} />
       <DarkLightMode />
     </TopHeaderContainer>
   );

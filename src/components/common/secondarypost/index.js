@@ -3,6 +3,7 @@ import CustomBox from "../box";
 import CustomImage from "../image";
 import SizedBox from "../sizedbox";
 import CustomTypography from "../typography";
+import { useNavigate } from "react-router-dom";
 
 const SecondaryPost = ({
   image,
@@ -11,10 +12,13 @@ const SecondaryPost = ({
   show = true,
   customStyles = {},
 }) => {
+  let navigate = useNavigate();
+
   return (
     <CustomBox
       needShadow
       needRadius
+      onClick={() => navigate("/blog/123")}
       styles={{
         width: { xs: "100%", sm: "100%" },
       }}

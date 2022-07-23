@@ -5,12 +5,14 @@ import CustomBox from "../box";
 import CustomImage from "../image";
 import CustomTypography from "../typography";
 import SizedBox from "../sizedbox";
+import { useNavigate } from "react-router-dom";
 
 const PrimaryPost = ({ src = "cloud,cloud+infrastructure" }) => {
   const theme = useTheme();
+  let navigate = useNavigate();
 
   return (
-    <PrimaryPostContainer>
+    <PrimaryPostContainer onClick={() => navigate("/blog/123")}>
       <CustomBox
         needShadow
         needRadius

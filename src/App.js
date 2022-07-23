@@ -2,9 +2,9 @@ import React from "react";
 import { useTheme } from "@mui/material/styles";
 
 import ResponsiveAppBar from "./components/common/header";
-import Home from "./components/home/index";
 import AppRoutes from "./routes";
 import Footer from "./components/common/footer";
+import CircularLoader from "./components/common/loader";
 
 function App() {
   const theme = useTheme();

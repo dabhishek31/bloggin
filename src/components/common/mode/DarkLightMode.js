@@ -8,6 +8,9 @@ const DarkLightMode = () => {
   const colorMode = useContext(ColorModeContext);
   return (
     <FormControlLabel
+      sx={{
+        mr: 0,
+      }}
       control={<MaterialUISwitch sx={{ m: 0 }} defaultChecked={false} />}
       //   label={<Typography variant="body2">{currentMode}</Typography>}
       onClick={() => {

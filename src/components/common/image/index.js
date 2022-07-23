@@ -6,9 +6,11 @@ const CustomImage = ({
   alt = "",
   styles = {},
   customStyles = {},
+  onClick = null,
 }) => {
   return (
     <CustomImageContainer
+      onClick={onClick}
       src={src}
       alt={alt}
       loading="lazy"

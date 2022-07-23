@@ -8,11 +8,13 @@ const CustomBox = ({
   needShadow = false,
   needRadius = false,
   styles = {},
+  onClick = null,
 }) => {
   const theme = useTheme();
 
   return (
     <Box
+      onClick={onClick}
       sx={{
         background: needBackground ? theme.palette.customBackground : "",
         boxShadow: needShadow ? theme.shadows[4] : 0,
