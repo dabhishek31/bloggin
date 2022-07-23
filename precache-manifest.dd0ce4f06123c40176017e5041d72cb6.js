@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f890aa3582f06096ac5c",
+    "revision": "023cafac8f8d66bff650",
     "url": "/bloogin/static/css/main.1684bf51.chunk.css"
   },
   {
-    "revision": "f890aa3582f06096ac5c",
-    "url": "/bloogin/static/js/main.f890aa35.chunk.js"
+    "revision": "023cafac8f8d66bff650",
+    "url": "/bloogin/static/js/main.023cafac.chunk.js"
   },
   {
     "revision": "0cd57e100a6202208881",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/bloogin/static/media/bloggin_logo.7988a319.png"
   },
   {
-    "revision": "dc2d78114e9e743a3c75ee3408e70abb",
+    "revision": "905b03024c55f9ead1edfcbcf64cab47",
     "url": "/bloogin/index.html"
   }
 ];
