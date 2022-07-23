@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "023cafac8f8d66bff650",
+    "revision": "07776ec29a4601771598",
     "url": "/bloogin/static/css/main.1684bf51.chunk.css"
   },
   {
-    "revision": "023cafac8f8d66bff650",
-    "url": "/bloogin/static/js/main.023cafac.chunk.js"
+    "revision": "07776ec29a4601771598",
+    "url": "/bloogin/static/js/main.07776ec2.chunk.js"
   },
   {
-    "revision": "0cd57e100a6202208881",
-    "url": "/bloogin/static/js/1.0cd57e10.chunk.js"
+    "revision": "7b0787d499f191c2d200",
+    "url": "/bloogin/static/js/1.7b0787d4.chunk.js"
   },
   {
     "revision": "ff2493009ade6818267a",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/bloogin/static/js/4.b6328d7d.chunk.js"
   },
   {
-    "revision": "a9289f4f80278be00651",
-    "url": "/bloogin/static/js/runtime~main.a9289f4f.js"
+    "revision": "0f3bc01db891903fd669",
+    "url": "/bloogin/static/js/runtime~main.0f3bc01d.js"
   },
   {
     "revision": "08109b8983786616849dc8db1f010c26",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/bloogin/static/media/bloggin_logo.7988a319.png"
   },
   {
-    "revision": "905b03024c55f9ead1edfcbcf64cab47",
+    "revision": "dd44ba5f8227f2acbbc6cff6763d38c7",
     "url": "/bloogin/index.html"
   }
 ];
