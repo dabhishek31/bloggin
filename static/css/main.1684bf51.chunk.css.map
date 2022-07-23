@@ -1,0 +1,1 @@
+{"version":3,"sources":["/Users/rac/Documents/reactjs/bloggin/src/index.css","main.1684bf51.chunk.css"],"names":[],"mappings":"AAAA,EACE,QAAA,CACA,SCCF,CDCA,IACE,UCCF","file":"main.1684bf51.chunk.css","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nimg {\n  width: 100%;\n}\n","* {\n  margin: 0;\n  padding: 0;\n}\nimg {\n  width: 100%;\n}\n\n"]}

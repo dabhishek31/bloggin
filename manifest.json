@@ -1,0 +1,22 @@
+{
+  "short_name": "Bloggin",
+  "name": "Best Blogs to Read, Free Yet Binge-Worthy Blogs For You to Read on The Internet",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon.ico",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.ico",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
