@@ -5,8 +5,13 @@ import MostRecentPosts from "./mostRecentPosts";
 import MostPopularPosts from "./mostPopularPosts";
 import PrimaryPostsContainer from "./primaryPostsContainer";
 import { Container } from "@mui/material";
+import useDocumentTitle from "../../hooks/useTitle";
 
 const Home = () => {
+  useDocumentTitle(
+    "Bloggin | Read Write Earn | Free Yet Binge-Worthy Blogs For You to Read on The Internet"
+  );
+
   return (
     <Container fixed>
       <CustomBox

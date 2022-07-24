@@ -59,7 +59,9 @@ const MainHeader = () => {
 
   return (
     <Toolbar disableGutters>
-      <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "flex" } }}>
+      <Box
+        sx={{ flexGrow: 1, display: { xs: "flex", sm: "flex", md: "none" } }}
+      >
         <DarkLightMode />
         <IconButton
           size="large"
