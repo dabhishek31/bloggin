@@ -24,7 +24,7 @@ const Home = () => {
         <PrimaryPostsContainer />
         <MostPopularPosts />
       </CustomBox>
-      {/* <MostRecentPosts /> */}
+      <MostRecentPosts />
       <SizedBox size={8} />
     </Container>
   );

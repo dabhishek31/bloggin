@@ -11,6 +11,7 @@ const SecondaryPost = ({
   src = "city,night",
   show = true,
   customStyles = {},
+  customBoxStyles = {},
 }) => {
   let navigate = useNavigate();
 
@@ -21,6 +22,7 @@ const SecondaryPost = ({
       needRadius
       onClick={() => navigate("/blog/123")}
       styles={{
+        ...customBoxStyles,
         width: { sm: "100%" },
         display: { xs: "flex", sm: "block", md: "block" },
         p: 1,
