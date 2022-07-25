@@ -13,7 +13,7 @@ const MostRecentPosts = () => {
         styles={{
           display: { sm: "grid" },
           gridTemplateColumns: { xs: "1fr 1fr", sm: "1fr 1fr 1fr" },
-          gap: "20px",
+          gap: "40px",
         }}
       >
         <SecondaryPost

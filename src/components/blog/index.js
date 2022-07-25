@@ -1,5 +1,6 @@
-import { Container, useTheme } from "@mui/material";
 import React from "react";
+import { Helmet } from "react-helmet";
+import { Container, useTheme } from "@mui/material";
 import { useParams } from "react-router-dom";
 import CustomBox from "../common/box";
 import CustomImage from "../common/image";
@@ -9,11 +10,17 @@ import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import useDocumentTitle from "../../hooks/useTitle";
 
 const BlogView = () => {
-  let props = useParams();
+  // let props = useParams();
   let theme = useTheme();
-  useDocumentTitle("Read the blog here");
   return (
     <>
+      <Helmet>
+        <title>Read the blog here</title>
+        <meta
+          name="description"
+          content="Enim exercitation velit sit laboris do cupidatat consequat dolore ea et incididunt velit.Nested component"
+        />
+      </Helmet>
       <SizedBox size={2} />
       <Container
         fixed
