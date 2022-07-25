@@ -12,7 +12,7 @@ const TopHeader = () => {
   const theme = useTheme();
   return (
     <TopHeaderContainer>
-      <Typography
+      {/* <Typography
         variant="body2"
         sx={{
           color: theme.palette.text.primary,
@@ -22,8 +22,8 @@ const TopHeader = () => {
       >
         <AddCircleIcon fontSize="small" />
         &nbsp;Sign Up
-      </Typography>
-      <Box sx={{ m: 1 }}></Box>
+      </Typography> */}
+      {/* <Box sx={{ m: 1 }}></Box>
       <Typography
         variant="body2"
         sx={{
@@ -34,8 +34,8 @@ const TopHeader = () => {
       >
         <LoginIcon fontSize="small" />
         &nbsp;Sign In
-      </Typography>
-      <Box sx={{ m: 1 }}></Box>
+      </Typography> */}
+      {/* <Box sx={{ m: 1 }}></Box>
       <Typography
         variant="body2"
         sx={{
@@ -46,7 +46,7 @@ const TopHeader = () => {
       >
         <LocalCafeIcon fontSize="small" />
         &nbsp;Buy me a coffee
-      </Typography>
+      </Typography> */}
       <SizedBox size={0.5} />
       <DarkLightMode />
     </TopHeaderContainer>

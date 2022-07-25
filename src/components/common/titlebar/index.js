@@ -10,6 +10,7 @@ const TitleBar = ({ text = "" }) => {
       needRadius
       styles={{
         p: 1,
+        width: { sm: "100%" },
         marginBottom: "16px",
       }}
     >

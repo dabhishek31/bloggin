@@ -94,7 +94,7 @@ const MainHeader = () => {
           </>
         ))}
       </Box>
-      <Search sx={{ display: { sm: "block", xs: "none" } }}>
+      {/* <Search sx={{ display: { sm: "block", xs: "none" } }}>
         <SearchIconWrapper>
           <SearchIcon />
         </SearchIconWrapper>
@@ -102,7 +102,7 @@ const MainHeader = () => {
           placeholder="Search…"
           inputProps={{ "aria-label": "search" }}
         />
-      </Search>
+      </Search> */}
       <Drawer anchor={"left"} open={anchor}>
         <Box sx={{ m: 2 }}>
           List Items to come here

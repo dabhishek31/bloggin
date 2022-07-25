@@ -14,7 +14,7 @@ const CustomImage = ({
       src={src}
       alt={alt}
       loading="lazy"
-      customStyles={customStyles}
+      customStyles={{ borderRadius: 4, ...customStyles }}
       style={{ ...styles }}
     />
   );

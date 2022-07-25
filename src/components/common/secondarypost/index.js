@@ -17,25 +17,34 @@ const SecondaryPost = ({
   return (
     <CustomBox
       needShadow
+      needBackground
       needRadius
       onClick={() => navigate("/blog/123")}
       styles={{
-        width: { xs: "100%", sm: "100%" },
+        width: { sm: "100%" },
+        display: { xs: "flex", sm: "block", md: "block" },
+        p: 1,
       }}
     >
-      <CustomImage
-        src={`https://source.unsplash.com/random/250x250`}
-        customStyles={customStyles}
-      />
-
       <CustomBox
-        needBackground
         styles={{
-          p: 1,
+          display: { xs: "flex" },
+          flex: { xs: "1" },
+        }}
+      >
+        <CustomImage
+          src={`https://source.unsplash.com/random/250x250`}
+          customStyles={customStyles}
+        />
+      </CustomBox>
+      <SizedBox />
+      <CustomBox
+        styles={{
+          flex: { xs: "3" },
         }}
       >
         <CustomTypography variant="body2">
-          Cillum occaecat magna ullamco proident eu nulla eu aliqua commodo.
+          ACillum occaecat magna ullamco proident eu nulla eu aliqua commodo.
         </CustomTypography>
         <SizedBox size={0.5} />
         <CustomTypography

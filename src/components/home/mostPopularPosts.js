@@ -15,11 +15,11 @@ const MostPopularPosts = () => {
     >
       <TitleBar text="Most popular" />
       <SecondaryPost
-        customStyles={{
-          [theme.breakpoints.down("sm")]: {
-            display: "none",
-          },
-        }}
+      // customStyles={{
+      //   [theme.breakpoints.down("sm")]: {
+      //     display: "none",
+      //   },
+      // }}
       />
     </CustomBox>
   );
