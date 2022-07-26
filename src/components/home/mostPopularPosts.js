@@ -5,7 +5,6 @@ import SecondaryPost from "../common/secondarypost";
 import TitleBar from "../common/titlebar";
 
 const MostPopularPosts = () => {
-  const theme = useTheme();
   return (
     <CustomBox
       styles={{

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Container, useTheme } from "@mui/material";
 import { useParams } from "react-router-dom";
@@ -12,6 +12,10 @@ import useDocumentTitle from "../../hooks/useTitle";
 const BlogView = () => {
   // let props = useParams();
   let theme = useTheme();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -36,15 +40,15 @@ const BlogView = () => {
             flexDirection: "column",
           }}
         >
-          <CustomTypography>Marketing | 25 min Read</CustomTypography>
+          <CustomTypography>Technology | 20 min Read</CustomTypography>
           <SizedBox />
           <CustomTypography
             styles={{
               fontSize: theme.typography.h5,
             }}
           >
-            Enim exercitation velit sit laboris do cupidatat consequat dolore ea
-            et incididunt velit.
+            Build your cloud infrastructure from code - Terraform (for
+            beginners)
           </CustomTypography>
           <SizedBox size={0.5} />
           <CustomTypography>

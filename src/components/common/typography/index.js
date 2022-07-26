@@ -5,12 +5,14 @@ const CustomTypography = ({
   children,
   variant = "body1",
   styles = { display: "inline-flex", alignItems: "center" },
+  onClick = null,
 }) => {
   const theme = useTheme();
   return (
     <Typography
       variant={variant}
       flexWrap={true}
+      onClick={onClick}
       sx={{
         color: theme.palette.text.primary,
         fontSize: {

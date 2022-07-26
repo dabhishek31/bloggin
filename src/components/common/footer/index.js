@@ -21,7 +21,9 @@ const Footer = () => {
           <CustomBox
             styles={{
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "space-evenly",
+              width: { xs: "80%", sm: "60%", md: "30%" },
+              margin: "0 auto",
             }}
           >
             <FacebookIcon
@@ -29,19 +31,16 @@ const Footer = () => {
                 color: "text.primary",
               }}
             />
-            <SizedBox width="10px" />
             <TwitterIcon
               sx={{
                 color: "text.primary",
               }}
             />
-            <SizedBox width="10px" />
             <InstagramIcon
               sx={{
                 color: "text.primary",
               }}
             />
-            <SizedBox width="10px" />
             <YouTubeIcon
               sx={{
                 color: "text.primary",
@@ -52,15 +51,14 @@ const Footer = () => {
           <CustomBox
             styles={{
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "space-evenly",
+              width: { xs: "100%", sm: "60%", md: "40%" },
+              margin: "0 auto",
             }}
           >
             <CustomTypography>Home</CustomTypography>
-            <SizedBox width="20px" />
             <CustomTypography>Blogs</CustomTypography>
-            <SizedBox width="20px" />
             <CustomTypography>Services</CustomTypography>
-            <SizedBox width="20px" />
             <CustomTypography>Privay Policy</CustomTypography>
           </CustomBox>
         </Container>

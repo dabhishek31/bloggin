@@ -6,6 +6,7 @@ import CustomImage from "../image";
 import CustomTypography from "../typography";
 import SizedBox from "../sizedbox";
 import { useNavigate } from "react-router-dom";
+import StarIcon from "@mui/icons-material/Star";
 
 const PrimaryPost = ({ src = "cloud,cloud+infrastructure" }) => {
   const theme = useTheme();
@@ -24,7 +25,23 @@ const PrimaryPost = ({ src = "cloud,cloud+infrastructure" }) => {
         <CustomImage
           src={`https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`}
         />
-
+        <CustomBox
+          needRadius
+          needBackground
+          styles={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+            background: "#FFE1BB",
+          }}
+        >
+          <StarIcon
+            sx={{
+              color: "black",
+              p: 1,
+            }}
+          />
+        </CustomBox>
         <CustomBox
           needShadow
           styles={{
@@ -50,7 +67,8 @@ const PrimaryPost = ({ src = "cloud,cloud+infrastructure" }) => {
               },
             }}
           >
-            How to build your infrastructure using code ?
+            Build your cloud infrastructure from code - Terraform (for
+            beginners)
           </CustomTypography>
           <CustomTypography
             styles={{

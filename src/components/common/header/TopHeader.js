@@ -7,6 +7,7 @@ import LoginIcon from "@mui/icons-material/Login";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import DarkLightMode from "../mode/DarkLightMode";
 import SizedBox from "../sizedbox";
+import CustomTypography from "../typography";
 
 const TopHeader = () => {
   const theme = useTheme();
@@ -35,18 +36,25 @@ const TopHeader = () => {
         <LoginIcon fontSize="small" />
         &nbsp;Sign In
       </Typography> */}
-      {/* <Box sx={{ m: 1 }}></Box>
-      <Typography
+      <Box sx={{ m: 1 }}></Box>
+      <CustomTypography
+        onClick={() =>
+          window.open(
+            "https://buy.stripe.com/00gcPE9zG5rm58c4gg",
+            "_blank" // <- This is what makes it open in a new window.
+          )
+        }
         variant="body2"
-        sx={{
+        styles={{
           color: theme.palette.text.primary,
           display: "inline-flex",
           alignItems: "center",
+          cursor: "pointer",
         }}
       >
         <LocalCafeIcon fontSize="small" />
         &nbsp;Buy me a coffee
-      </Typography> */}
+      </CustomTypography>
       <SizedBox size={0.5} />
       <DarkLightMode />
     </TopHeaderContainer>

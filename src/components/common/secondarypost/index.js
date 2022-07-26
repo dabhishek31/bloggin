@@ -25,13 +25,13 @@ const SecondaryPost = ({
         ...customBoxStyles,
         width: { sm: "100%" },
         display: { xs: "flex", sm: "block", md: "block" },
-        p: 1,
       }}
     >
       <CustomBox
         styles={{
           display: { xs: "flex" },
           flex: { xs: "1" },
+          p: 1,
         }}
       >
         <CustomImage
@@ -43,6 +43,7 @@ const SecondaryPost = ({
       <CustomBox
         styles={{
           flex: { xs: "3" },
+          p: 1,
         }}
       >
         <CustomTypography variant="body2">

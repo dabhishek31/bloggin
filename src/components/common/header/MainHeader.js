@@ -16,8 +16,10 @@ import CustomPopover from "../popover";
 import CustomBox from "../box";
 import CustomImage from "../image";
 import Logo from "../../../assets/bloggin_logo.png";
+import Sidebar from "./sidebar";
+import CloseIcon from "@mui/icons-material/Close";
 
-const pages = ["Marketplace", "About", "Blog"];
+const pages = ["About", "Blog"]; // "Marketplace",
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const MainHeader = () => {
@@ -104,17 +106,14 @@ const MainHeader = () => {
         />
       </Search> */}
       <Drawer anchor={"left"} open={anchor}>
-        <Box sx={{ m: 2 }}>
-          List Items to come here
-          <Button
-            variant="contained"
-            sx={{ m: 2 }}
+        <Box sx={{ m: 2, position: "relative", width: "280px" }}>
+          <CloseIcon
             onClick={() => {
               handleCloseNavMenu();
             }}
-          >
-            Close
-          </Button>
+            sx={{ position: "absolute", right: 0 }}
+          />
+          <Sidebar />
         </Box>
       </Drawer>
     </Toolbar>
