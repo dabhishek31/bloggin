@@ -5,3 +5,21 @@
 img {
   width: 100%;
 }
+
+@font-face {
+  font-family: "Jost";
+  font-weight: 400;
+  src: local("Jost"), url(./assets/fonts/Jost400Book.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Jost";
+  font-weight: 500;
+  src: local("Jost"), url(./assets/fonts/Jost500Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Jost";
+  font-weight: 600;
+  src: local("Jost"), url(./assets/fonts/Jost600Semi.otf) format("opentype");
+}
