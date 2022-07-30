@@ -37,6 +37,7 @@ const Banner = () => {
           <CustomTypography
             styles={{
               fontSize: "96px",
+              fontWeight: "500",
             }}
           >
             Hakuna Matata
