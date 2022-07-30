@@ -7,7 +7,7 @@ import CustomImage from "../common/image";
 import SizedBox from "../common/sizedbox";
 import CustomTypography from "../common/typography";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
-import useDocumentTitle from "../../hooks/useTitle";
+// import useDocumentTitle from "../../hooks/useTitle";
 
 const BlogView = () => {
   // let props = useParams();

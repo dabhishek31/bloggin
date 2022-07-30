@@ -23,6 +23,7 @@ const CustomTypography = ({
           ...styles.fontSize,
         },
         fontFamily: theme.typography.fontFamily,
+        fontWeight: 500,
         ...styles,
       }}
     >

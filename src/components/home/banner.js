@@ -38,10 +38,12 @@ const Banner = () => {
             styles={{
               fontSize: "96px",
               fontWeight: "500",
+              lineHeight: "100%",
             }}
           >
             Hakuna Matata
           </CustomTypography>
+          <SizedBox />
           <CustomTypography
             styles={{
               fontSize: "16px",
