@@ -13,7 +13,7 @@ function App() {
     <>
       <ResponsiveAppBar />
       <AppRoutes />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

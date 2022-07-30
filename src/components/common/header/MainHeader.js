@@ -15,7 +15,7 @@ import DarkLightMode from "../mode/DarkLightMode";
 import CustomPopover from "../popover";
 import CustomBox from "../box";
 import CustomImage from "../image";
-import Logo from "../../../assets/bloggin_logo.png";
+// import Logo from "assets/images/bloggin_logo.png";
 import Sidebar from "./sidebar";
 import CloseIcon from "@mui/icons-material/Close";
 

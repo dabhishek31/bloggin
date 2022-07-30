@@ -27,6 +27,18 @@ const ColorModeState = ({ children }) => {
           mode,
           ...(mode === "light" ? lightTheme : darkTheme),
         },
+        typography: {
+          fontFamily: [
+            "Jost",
+            "Roboto",
+            '"Helvetica Neue"',
+            "Arial",
+            "sans-serif",
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+          ].join(","),
+        },
       }),
     [mode]
   );

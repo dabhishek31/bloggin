@@ -6,11 +6,14 @@ import MostPopularPosts from "./mostPopularPosts";
 import PrimaryPostsContainer from "./primaryPostsContainer";
 import { Container } from "@mui/material";
 import useDocumentTitle from "../../hooks/useTitle";
+import Banner from "./banner";
 
 const Home = () => {
   useDocumentTitle(
     "Bloggin | Read Write Earn | Free Yet Binge-Worthy Blogs For You to Read on The Internet"
   );
+
+  return <Banner />;
 
   return (
     <Container fixed>

@@ -18,7 +18,7 @@ const CustomBox = ({
       sx={{
         background: needBackground ? theme.palette.customBackground : "",
         boxShadow: needShadow ? theme.shadows[4] : 0,
-        borderRadius: needRadius ? 1 : 0,
+        borderRadius: needRadius ? 2 : 0,
         ...styles,
       }}
     >

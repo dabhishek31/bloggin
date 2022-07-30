@@ -1,15 +1,15 @@
 export const lightTheme = {
   primary: {
-    main: "#FFFCE8",
-    light: "#fefae0",
-    dark: "#FFE1BB",
+    main: "#79B4B7",
+    secondary: "#FEFBF3",
+    tertiary: "#F8F0DF",
+    quaternary: "#9D9D9D",
   },
-  customBackground:
-    "linear-gradient(90deg, hsla(52, 100%, 95%, 1) 0%, hsla(34, 100%, 87%, 1) 98%);",
-
+  customBackground: "linear-gradient(135deg, #79B4B7 0%, #FEFBF3 100%)",
   text: {
-    disabled: "#e3d5ca",
-    primary: "#283618",
+    disabled: "#9D9D9D",
+    primary: "#000000",
+    secondary: "#2B2B2B",
   },
 };
 
