@@ -1,27 +1,18 @@
 import React from "react";
+import { Container, Divider } from "@mui/material";
+
 import CustomBox from "../common/box";
 import SizedBox from "../common/sizedbox";
-import MostRecentPosts from "./mostRecentPosts";
-import MostPopularPosts from "./mostPopularPosts";
-import PrimaryPostsContainer from "./primaryPostsContainer";
-import { Container, Divider, useTheme } from "@mui/material";
-// import useDocumentTitle from "../../hooks/useTitle";
 import Banner from "./banner";
 import CustomImage from "../common/image";
-import trendingLogo from "../../assets/images/trending.png";
 import CustomTypography from "../common/typography";
 import PostCard from "../common/postcard";
-import UserView from "../common/userview";
-import PostTitleShortDesc from "../common/posttitleshortdesc";
-import PostDateTime from "../common/posttime";
+
 import HorizontalPosts from "./horizontalPosts";
 import InterestSelection from "./interestSelection";
+import trendingLogo from "../../assets/images/trending.png";
 
 const Home = () => {
-  // useDocumentTitle(
-  //   "Bloggin | Read Write Earn | Free Yet Binge-Worthy Blogs For You to Read on The Internet"
-  // );
-  const theme = useTheme();
   return (
     <CustomBox>
       <Banner />
@@ -84,23 +75,6 @@ const Home = () => {
       </Container>
       <SizedBox size={2} />
     </CustomBox>
-  );
-
-  return (
-    <Container fixed>
-      <CustomBox
-        styles={{
-          margin: "24px 0px",
-          display: { xs: "block", sm: "flex", md: "flex" },
-          justifyContent: "space-between",
-        }}
-      >
-        <PrimaryPostsContainer />
-        <MostPopularPosts />
-      </CustomBox>
-      <MostRecentPosts />
-      <SizedBox size={8} />
-    </Container>
   );
 };
 

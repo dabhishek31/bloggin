@@ -19,7 +19,7 @@ const options = [
 const InterestSelection = () => {
   const theme = useTheme();
   return (
-    <CustomBox styles={{ flex: 1, ml: 2 }}>
+    <CustomBox styles={{ flex: 1, ml: 6 }}>
       <CustomTypography>Choose your interest area</CustomTypography>
       <SizedBox />
       <CustomBox
