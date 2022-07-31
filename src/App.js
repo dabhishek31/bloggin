@@ -3,8 +3,6 @@ import { useTheme } from "@mui/material/styles";
 
 import ResponsiveAppBar from "./components/common/header";
 import AppRoutes from "./routes";
-import Footer from "./components/common/footer";
-import CircularLoader from "./components/common/loader";
 
 function App() {
   const theme = useTheme();
@@ -13,7 +11,6 @@ function App() {
     <>
       <ResponsiveAppBar />
       <AppRoutes />
-      {/* <Footer /> */}
     </>
   );
 }
