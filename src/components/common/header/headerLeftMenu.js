@@ -23,7 +23,7 @@ const HeaderLeftMenu = () => {
   return (
     <CustomBox
       styles={{
-        display: "flex",
+        display: { xs: "none", sm: "none", md: "flex" },
         // outline: "solid 1px red",
         alignItems: "center",
       }}
