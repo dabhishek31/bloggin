@@ -28,3 +28,21 @@ export const rightMenuItems = [
     click: () => {},
   },
 ];
+
+export const mobileRightMenuItems = [
+  ...rightMenuItems,
+  {
+    text: "Sign Up",
+    click: () => {},
+  },
+  {
+    text: "Contact Us",
+    click: ({ navigate }) => {
+      if (navigate) navigate("/contact-us");
+    },
+  },
+  {
+    text: "Privacy Policy",
+    click: () => {},
+  },
+];

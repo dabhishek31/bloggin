@@ -11,7 +11,13 @@ import VerticalPosts from "./verticalPosts";
 const Home = () => {
   return (
     <CustomBox>
-      <Banner />
+      <Banner
+        heading="Hakuna Matata"
+        shortDesc="Occaecat magna reprehenderit mollit elit do sunt veniam. In non
+            nostrud non amet magna adipisicing sunt ipsum. Officia qui irure
+            officia Lorem mollit minim enim cillum amet elit eiusmod magna amet
+            aliquip."
+      />
       <TrendingPosts />
       <SizedBox size={2} />
       <Divider />

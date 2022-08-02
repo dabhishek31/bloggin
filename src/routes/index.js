@@ -5,6 +5,7 @@ import CircularLoader from "../components/common/loader";
 const Home = lazy(() => import("../components/home"));
 const BlogView = lazy(() => import("../components/blog"));
 const GenericNotFound = lazy(() => import("../components/notfound"));
+const ContactUs = lazy(() => import("../components/contactus"));
 
 const AppRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/post/:id" element={<BlogView />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="*" element={<GenericNotFound />} />
       </Routes>
     </Suspense>

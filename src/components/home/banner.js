@@ -5,8 +5,9 @@ import bannerIllustration from "../../assets/images/banner_illustration.png";
 import CustomImage from "../common/image";
 import CustomTypography from "../common/typography";
 import SizedBox from "../common/sizedbox";
+import PrimaryButton from "components/common/primaryBtn";
 
-const Banner = () => {
+const Banner = ({ heading = "", shortDesc = "", hideBtn = false }) => {
   const theme = useTheme();
   return (
     <CustomBox
@@ -42,7 +43,7 @@ const Banner = () => {
               lineHeight: "100%",
             }}
           >
-            Hakuna Matata
+            {heading}
           </CustomTypography>
           <SizedBox />
           <CustomTypography
@@ -51,29 +52,10 @@ const Banner = () => {
               color: "#2B2B2B",
             }}
           >
-            Occaecat magna reprehenderit mollit elit do sunt veniam. In non
-            nostrud non amet magna adipisicing sunt ipsum. Officia qui irure
-            officia Lorem mollit minim enim cillum amet elit eiusmod magna amet
-            aliquip.
+            {shortDesc}
           </CustomTypography>
           <SizedBox size={2} />
-          <CustomBox
-            needRadius
-            styles={{
-              background: theme.palette.primary.tertiary,
-              padding: "12px 20px",
-              cursor: "pointer",
-              width: "fit-content",
-            }}
-          >
-            <CustomTypography
-              styles={{
-                fontWeight: 500,
-              }}
-            >
-              Get Started
-            </CustomTypography>
-          </CustomBox>
+          {!hideBtn && <PrimaryButton text="Get Started" />}
         </CustomBox>
 
         <CustomImage

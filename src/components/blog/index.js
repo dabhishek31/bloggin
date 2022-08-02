@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Container, useTheme } from "@mui/material";
-import { useParams } from "react-router-dom";
-import CustomBox from "../common/box";
-import CustomImage from "../common/image";
-import SizedBox from "../common/sizedbox";
-import CustomTypography from "../common/typography";
+// import { useParams } from "react-router-dom";
+import CustomBox from "components/common/box";
+import CustomImage from "components/common/image";
+import SizedBox from "components/common/sizedbox";
+import CustomTypography from "components/common/typography";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
-// import useDocumentTitle from "../../hooks/useTitle";
 
 const BlogView = () => {
   // let props = useParams();
@@ -79,7 +78,8 @@ const BlogView = () => {
         <SizedBox />
         <CustomTypography
           styles={{
-            fontSize: theme.typography.body1,
+            fontSize: theme.typography.body2,
+            fontWeight: 400,
           }}
         >
           Ad nisi eu mollit eiusmod est sit mollit labore non aute et culpa

@@ -9,8 +9,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import brand_short_logo from "../../../assets/images/brand_short_logo.png";
 import CustomImage from "../image";
 import SizedBox from "../sizedbox";
+import { useNavigate } from "react-router-dom";
 
 export default function MobileView() {
+  const navigate = useNavigate();
+
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -53,6 +56,7 @@ export default function MobileView() {
         <CustomImage
           src={brand_short_logo}
           styles={{ height: "40px", width: "auto" }}
+          onClick={() => navigate("/")}
         />
         <MenuIcon onClick={toggleDrawer("right", true)} />
       </CustomBox>

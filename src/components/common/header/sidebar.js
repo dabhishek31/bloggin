@@ -8,9 +8,12 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import Box from "@mui/material/Box";
-import { leftMenuItems, rightMenuItems } from "./constants";
+import { leftMenuItems, mobileRightMenuItems } from "./constants";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = ({ anchor, toggleDrawer }) => {
+  const navigate = useNavigate();
+
   return (
     <Box
       sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
@@ -32,9 +35,9 @@ const Sidebar = ({ anchor, toggleDrawer }) => {
       </List>
       <Divider />
       <List>
-        {rightMenuItems.map((val, index) => (
+        {mobileRightMenuItems.map((val, index) => (
           <ListItem key={val.text} disablePadding>
-            <ListItemButton onClick={val.click}>
+            <ListItemButton onClick={() => val.click({ navigate })}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
