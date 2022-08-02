@@ -19,8 +19,14 @@ const options = [
 const InterestSelection = () => {
   const theme = useTheme();
   return (
-    <CustomBox styles={{ flex: 1, ml: 6 }}>
-      <CustomTypography>Choose your interest area</CustomTypography>
+    <CustomBox styles={{ ml: { xs: 3, md: 6 } }}>
+      <CustomTypography
+        styles={{
+          fontSize: "16px",
+        }}
+      >
+        Select Your Interest Areas
+      </CustomTypography>
       <SizedBox />
       <CustomBox
         styles={{
@@ -44,7 +50,7 @@ const InterestSelection = () => {
         ))}
       </CustomBox>
       <SizedBox />
-      <Divider />
+      <Divider sx={{ display: { xs: "none", sm: "none" } }} />
     </CustomBox>
   );
 };

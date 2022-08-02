@@ -3,22 +3,7 @@ import { useTheme } from "@mui/material";
 import CustomBox from "../box";
 import SizedBox from "../sizedbox";
 import CustomTypography from "../typography";
-
-const rightMenuItems = [
-  {
-    text: "Buy me a coffee",
-    click: () => {
-      window.open(
-        "https://buy.stripe.com/00gcPE9zG5rm58c4gg",
-        "_blank" // <- This is what makes it open in a new window.
-      );
-    },
-  },
-  {
-    text: "Sign In",
-    click: () => {},
-  },
-];
+import { rightMenuItems } from "./constants";
 
 const HeaderRightMenu = () => {
   const theme = useTheme();

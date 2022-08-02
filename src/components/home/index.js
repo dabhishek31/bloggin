@@ -17,7 +17,7 @@ const Home = () => {
       <Divider />
       <SizedBox size={2} />
       <VerticalPosts />
-      <SizedBox size={2} />
+      {/* <SizedBox size={2} /> */}
     </CustomBox>
   );
 };

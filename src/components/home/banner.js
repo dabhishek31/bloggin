@@ -31,12 +31,13 @@ const Banner = () => {
       >
         <CustomBox
           styles={{
-            width: "60%",
+            width: { xs: "90%", md: "60%" },
+            margin: { xs: "0 auto", md: "0" },
           }}
         >
           <CustomTypography
             styles={{
-              fontSize: "96px",
+              fontSize: { xs: "60px", md: "96px" },
               fontWeight: "500",
               lineHeight: "100%",
             }}
@@ -83,6 +84,9 @@ const Banner = () => {
             width: "386px",
             top: 0,
             right: 0,
+            [theme.breakpoints.down("md")]: {
+              display: "none",
+            },
           }}
         />
       </Container>

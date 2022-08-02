@@ -3,27 +3,13 @@ import CustomBox from "../box";
 import CustomImage from "../image";
 import CustomTypography from "../typography";
 import BrandLogo from "../../../assets/images/brand_logo.png";
-
-const leftMenuItems = [
-  {
-    text: "Our Story",
-    click: () => {},
-  },
-  {
-    text: "Membership",
-    click: () => {},
-  },
-  {
-    text: "Write",
-    click: () => {},
-  },
-];
+import { leftMenuItems } from "./constants";
 
 const HeaderLeftMenu = () => {
   return (
     <CustomBox
       styles={{
-        display: { xs: "none", sm: "none", md: "flex" },
+        display: "flex",
         // outline: "solid 1px red",
         alignItems: "center",
       }}

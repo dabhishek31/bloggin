@@ -22,8 +22,18 @@ const HorizontalPosts = () => {
         <SizedBox size={0.2} />
         <PostDateTime />
       </CustomBox>
-      <SizedBox size={2} />
-      <CustomBox styles={{ display: "flex", alignItems: "center" }}>
+      <SizedBox
+        size={2}
+        styles={{
+          display: { xs: "none" },
+        }}
+      />
+      <CustomBox
+        styles={{
+          display: { xs: "none", sm: "none", md: "flex" },
+          alignItems: "center",
+        }}
+      >
         <CustomImage
           styles={{ height: "150px", width: "auto" }}
           src="https://images.pexels.com/photos/12906892/pexels-photo-12906892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"

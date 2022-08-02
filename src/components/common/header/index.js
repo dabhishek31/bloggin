@@ -6,6 +6,7 @@ import CustomBox from "../box";
 import { useNavigate } from "react-router-dom";
 import HeaderLeftMenu from "./headerLeftMenu";
 import HeaderRightMenu from "./headerRightMenu";
+import MobileView from "./mobileView";
 
 const ResponsiveAppBar = () => {
   const theme = useTheme();
@@ -29,13 +30,15 @@ const ResponsiveAppBar = () => {
           styles={{
             pt: 2,
             pb: 2,
-            display: "flex",
+            display: { xs: "none", sm: "none", md: "flex" },
             justifyContent: "space-between",
           }}
         >
           <HeaderLeftMenu />
           <HeaderRightMenu />
         </CustomBox>
+
+        <MobileView />
       </Container>
     </AppBar>
   );

@@ -13,7 +13,7 @@ const TrendingPosts = () => {
     <Container
       fixed
       sx={{
-        pl: "0 !important",
+        pl: { md: "0 !important" },
         pr: "0 !important",
         mt: 6,
       }}
@@ -24,7 +24,13 @@ const TrendingPosts = () => {
           styles={{ height: "20px", width: "20px" }}
         />
         <SizedBox size={0.5} />
-        <CustomTypography>Trending posts</CustomTypography>
+        <CustomTypography
+          styles={{
+            fontSize: "16px",
+          }}
+        >
+          Trending Posts
+        </CustomTypography>
       </CustomBox>
 
       <CustomBox
@@ -32,7 +38,7 @@ const TrendingPosts = () => {
           p: 1,
           mt: "12px",
           display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
+          gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr", md: "1fr 1fr 1fr" },
           gap: "40px",
         }}
       >
